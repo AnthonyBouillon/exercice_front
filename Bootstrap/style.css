@@ -1,0 +1,28 @@
+nav{
+    background-color: black;
+}
+nav li a:hover, a:focus, a:visited, a{
+    color: white;
+}
+
+footer{
+    background-color: black;
+    min-height: 45px;
+    margin-top: 5px; 
+}
+ footer ul li{
+    display: inline-flex;
+    padding: 10px;
+ }
+
+h2{
+    font-size: 20px;
+}
+
+section{
+   padding: 2px;
+}
+
+.block_content_2{
+    background: #C7C8C3;
+}

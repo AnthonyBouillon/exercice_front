@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var number;
+
+        var summation = 0;
+        summation = parseInt(summation);
+
+        var average;
+
+        var counter = 0;
+        counter = parseInt(counter);
+
+        while (true) {
+            number = prompt('Saisissez des entiers');
+            number = parseInt(number);
+            if (number == 0) {
+                break;
+            }
+            counter++;
+            summation = summation + number;
+        }
+        average = summation / counter;
+        alert(summation + '\n' + average);
+    </script>
+</body>
+
+</html>

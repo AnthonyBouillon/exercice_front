@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var name = prompt('Entrez votre nom');
+        var firstname = prompt('Entrez votre prénom');
+        // Si OK : boolean = true, sinon boolean = false
+        var gender = confirm("Etes vous un homme ?");
+        if (gender) {
+            alert('Bonjour Monsieur ' + name + ' ' + firstname + '\n' + 'Bienvenue sur notre site web !');
+        } else {
+            alert('Bonjour Madame ' + name + ' ' + firstname + '\n' + 'Bienvenue sur notre site web !');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.jaune {
+background-color: #ffff00;
+}
+.jaune_relative{
+background-color: #ffff00;
+position: relative;
+bottom: 5px;
+}
+.verte {
+background-color: #00ff00;
+}
+.jaune_absolute{
+position: absolute;
+top: 1em;
+right: 30em;
+background-color: #ffff00;
+}

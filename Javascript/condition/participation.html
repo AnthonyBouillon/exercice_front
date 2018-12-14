@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var single = confirm('Etes vous célibataire');
+        var child = confirm('Avez vous des enfants ?');
+        if (child) {
+            var number_children = prompt('Combien ?');
+            number_children = parseInt(number_children);
+        }
+        var salary = prompt('Ecrivez le montant de votre salaire');
+        var participation;
+
+        if (single) {
+            participation = 20;
+        } else {
+            participation = 25;
+        }
+        if (child) {
+            participation = participation + (10 * number_children);
+        }
+        if (salary < 1200) {
+            participation = participation + 10;
+        }
+        if (participation > 50) {
+            participation = 50;
+        }
+        alert('Votre participation est de : ' + participation);
+    </script>
+</body>
+
+</html>

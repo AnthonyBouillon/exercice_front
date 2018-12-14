@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var his_year = prompt('Entrez votre année de naissance');
+        var now = new Date();
+        var year = now.getFullYear();
+        var age = year - his_year;
+        if (age >= 18) {
+            alert(age + ' ' + 'Majeur');
+        } else {
+            alert(age + ' ' + 'Mineur');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var unit_price = prompt('Prix unité');
+        unit_price = parseFloat(unit_price);
+
+        var quantity = prompt('Quantité');
+        quantity = parseInt(quantity);
+
+        // Prix total sans remise ni port (tot)
+        var total_price = parseFloat(total_price);
+        var port = parseFloat(port);
+        var discount = parseFloat(discount);
+        // Prix final à payer
+        var price_to_pay = parseFloat(price_to_pay);
+
+        total_price = unit_price * quantity;
+        if (total_price > 500) {
+            port = 0;
+        } else {
+            // Sinon 2% du prix total
+            port = (total_price * 2) / 100;
+            if (port < 6) {
+                port = 6;
+            }
+        }
+        if (total_price >= 100 && total_price <= 200) {
+            discount = (total_price * 5 / 100);
+        } else if (total_price > 200) {
+            discount = (total_price * 10 / 100);
+        } else {
+            discount = 0;
+        }
+        price_to_pay = (total_price + port) - discount;
+        alert('Prix tout compris : ' + price_to_pay);
+    </script>
+</body>
+//
+
+</html>

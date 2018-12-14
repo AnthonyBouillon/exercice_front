@@ -1,0 +1,40 @@
+
+.block_list{
+    background-color: aqua;
+    width: 50%;
+    height: 10px;
+    margin:0 auto;
+    #title_list{
+    text-align: center;
+}
+}
+.center{
+   text-align: center; 
+}
+.coordinate{
+    display: inline-block;
+    width: 150px;
+}
+input {
+    margin-bottom: 10px;
+}
+.fieldset_genre{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+select{
+    width: 150px;
+}
+.container{
+    margin-left: 20%;
+    margin-right: 19%;
+}
+@media screen and (max-width: 1440px) {
+.container{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}
+table, tr, th, td{
+    border: 2px solid black;
+}

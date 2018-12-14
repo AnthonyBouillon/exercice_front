@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var firstname;
+        var counter = 0;
+        var number = 0;
+        var array_firstname = new Array();
+        var firstname_list = '';
+
+        while (true) {
+            number++; // Numéro du prénom
+            firstname = prompt('Saisissez le prénom N°' + number + '\n' + 'ou Clic sur Annuler pour arrêter la saisie.');
+            if (firstname == null || firstname == '') { // Si le prénom n'est pas saisie || qu'il est vide
+                break; // Arrête la boucle
+            }
+            array_firstname[counter] = firstname; // Entre le prénom dans le tableau
+            counter++;
+        }
+        array_firstname.forEach(element => { // Parcour les éléments du tableau
+            firstname_list = firstname_list + ' ' + element; // Stocke les éléments dans une variable
+        });
+        alert('Nombre de prénom : ' + counter + '\n' + 'Les prénoms saisies : ' + firstname_list);
+    </script>
+</body>
+
+</html>

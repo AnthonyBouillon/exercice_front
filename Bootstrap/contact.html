@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TARTEMPION</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <img src="tartempion_html_zip/images/tartempion_logo.jpg" alt="Image" title="Image">
+        </header>
+        <nav class="row">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" title="Redirection page accueil" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="tableau.html" title="Redirection page tableau" class="nav-link">Tableau</a></li>
+                <li class="nav-item"><a href="contact.html" title="Redirection page formulaire de contact" class="nav-link">Formulaire</a></li>
+            </ul>
+        </nav>
+        <section class="row">
+            <img src="tartempion_html_zip/images/photo.jpg" title="bannière" alt="image" class="img-fluid">
+        </section>
+        <section>
+            <h1 class="text-center">Nous lançons une grande enquête sur les anciens stagiaires</h1>
+            <p class="text-center">Merci de nous répondre</p>
+        </section>
+        <section>
+            <form action="http://bienvu.net/script.php" method="POST" enctype="multipart/form-data" class="col-12">
+                <!-- block formulaire -->
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend>Vos coordonnées</legend>
+
+                        <div class="col-lg-8 col-xs-12">
+                            <div class="form-group">
+                                <label for="name">votre nom</label>
+                                <input type="text" name="name" id="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="coordinate">votre prénom</label>
+                                <input type="text" name="firstname" id="firstname" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date_of_birth" class="coordinate">votre date de naissance</label>
+                                <input type="date" name="date_of_birth" id="date_of_birth" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address" class="coordinate">votre adresse</label>
+                                <input type="text" name="address" id="address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="city" class="coordinate">votre ville</label>
+                                <input type="text" name="city" id="city" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="postal_code" class="coordinate">votre code postal</label>
+                                <input type="text" name="postal_code" id="postal_code" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mail" class="coordinate">votre e-mail</label>
+                                <input type="email" name="mail" id="mail" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="form-group">
+                        <label for="man">Vous êtes un homme</label>
+                        <input type="radio" name="genre" id="man" value="man">
+                    </div>
+                    <div class="form-group">
+                        <label for="woman">Vous êtes une femme</label>
+                        <input type="radio" name="genre" id="woman" value="woman">
+                    </div>
+                </fieldset>
+
+
+                <section>
+                    <div class="row">
+                        <div class="col-lg-8 col-xs-12">
+                            <select name="job" class="custom-select">
+                                <option value="developpement">Développeur</option>
+                                <option value="jobseeker">Rechercheur d'emploi</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="form-group"></div>
+                            <label for="other">si vous avez répondu autre, précisez</label>
+                            <input type="text" name="other" id="other" class="form-control">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-lg-8 col-xs-12">
+                            <select name="salary" class="custom-select">
+                                <option value="&lt;1000">&lt;1000</option>
+                                <option value=">1000">>1000</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <label for="year">en quelle année avez-vous suivi le stage d'afpa ?</label>
+                            <input type="text" name="year" id="year" class="form-control">
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <textarea name="comment" cols="35" rows="5" placeholder="vos commentaires" class="form-control"></textarea>
+                </section>
+
+                <section>
+                    <h2>merci d'avoir répondu au questionnaire</h2>
+                    <input type="submit" value="valider" class="btn btn-primary">
+                    <input type="reset" value="annuler" class="btn btn-secondary">
+                </section>
+
+            </form>
+        </section>
+        <footer class="row">
+            <ul class="">
+                <li><a href="" title="Redirection page mentions légales">Mentions légales</a></li>
+                <li><a href="" title="Redirection page horaires">Horaires</a></li>
+                <li><a href="" title="Redirection page plan du site">Plan du site</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

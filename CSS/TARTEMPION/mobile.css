@@ -1,0 +1,20 @@
+
+ .block_content_2, .block_content_2 aside p{
+        display: none;
+}
+ .block_content_1{
+        width: 100%!important;
+}
+.container {
+    margin-left: 0%!important;
+    margin-right: 0%!important;
+}
+nav{
+    height: 110px!important;
+}
+nav li {
+    display: block!important;
+}
+p{
+    font-size: 15px!important;
+}

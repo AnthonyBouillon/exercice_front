@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var magic = parseInt(Math.random() * 10);
+
+        while (true) {
+            var number = prompt('Trouve le nombre');
+            if (magic == number) {
+                alert('Tu as trouvé !' + '\n' + 'Le numéro de l\'ordinateur est : ' + magic + ' et le tien : ' + number);
+                break;
+            } else if (magic < number) {
+                console.log('Plus petit');
+                if (!confirm('Veut tu rejouer ?')) {
+                    break;
+                }
+            } else {
+                console.log('Plus grand');
+                if (!confirm('Veut tu rejouer ?')) {
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
