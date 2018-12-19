@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var firstname = ['Anthony', 'Gérard', 'Sammy', 'Tommy'];
+        for (element in firstname) {
+            console.log(firstname[element]);
+        }
+        var search = prompt('Ecrivez le nom à supprimer');
+
+        var indice = firstname.indexOf(search);// Retourne l'indice du prénom saisie
+
+        console.log('');
+
+        delete firstname[indice];
+        for (element in firstname) {
+            console.log(firstname[element]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('1 - Multiples');
+        console.log('2 - Somme et moyenne');
+        console.log('3 - Recherche du nombre de voyelle');
+        console.log('4 - Recherche d nombre des caractères suivants');
+        var option = prompt('Entre votre option : ');
+        switch (option) {
+            case '1':
+                multiple();
+                break;
+            case '2':
+                summary_average();
+                break;
+            case '3':
+                number_vowel();
+                break;
+            case '4':
+                search_string();
+                break;
+            default:
+                alert('ERROR');
+        }
+
+        function multiple() {
+            var n = prompt('nombre 1');
+            var x = prompt('nombre 2');
+            for (let i = 1; i <= 10; i++) {
+                summation = i * x;
+                console.log(i + ' x ' + x + ' = ' + summation);
+            }
+        }
+
+        function summary_average() {
+            var summation = 0;
+            var counter = 0;
+            while (true) {
+                var number = prompt('Saisissez des entiers');
+                number = parseInt(number);
+                if (number == 0) {
+                    break;
+                }
+                counter++;
+                summation = summation + number;
+            }
+            average = summation / counter;
+            console.log('Somme : ' + summation + '\n' + 'Moyenne : ' + average);
+        }
+
+        function number_vowel() {
+            var word = prompt('Saisissez un mot');
+            var regex = /[aeiouy]/gi;
+            var letter = word.match(regex);
+
+            if (letter != null) {
+                var number = letter.length;
+                console.log('Il y a : ' + number + ' ' + 'voyelle(s)');
+            } else {
+                console.log('Il y a : 0 voyelle');
+            }
+        }
+
+        function search_string() {
+            var phrase = prompt('Saisissez votre phrase');
+            var search = prompt('Saisissez le ou les caractères que vous recherché');
+            var number_string = search.length;
+            var counter = 0;
+            for (var i = 0; i < phrase.length; i++) { // parcourt chaque lettre de la phrase
+                if (phrase.substr((i + 1), number_string) == search) { // si une ou des lettres de la phrase correspond à celle recherché ou à ceux recherchés
+                    counter++; // ajoute +1 au compteur
+                }
+            }
+            console.log('Il y a' + ' ' + counter + ' ' + 'fois la ou les lettre(s)' + ' ' + search + ' ' + 'dans la phrase');
+        }
+
+    </script>
+</body>
+
+</html>

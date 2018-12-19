@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec du javaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulaire de contact</h1>
+        <hr>
+        <form action="http://bienvu.net/script.php" id="form" method="POST" name="form_name">
+            <h2>Vos coordonnées :</h2>
+            <p>* Ces zones sont oligatoires pour envoyer le formulaire.</p>
+
+            <div class="form-group">
+                <label for="society">Société :</label><span> *</span>
+                <input type="text" name="society" id="society" class="form-control">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="contact_person">Personne à contacter :</label><span> *</span>
+                <input type="text" name="contact_person" id="contact_person" class="form-control">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="address_enterprise">Adresse de l'entreprise :</label>
+                <textarea name="address_enterprise" id="address_enterprise" class="form-control"></textarea>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="postal_code">Code Postal :</label><span> *</span>
+                <input type="text" name="postal_code" id="postal_code" class="form-control">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Ville :</label><span> *</span>
+                <input type="text" name="city" id="city" class="form-control">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail :</label><span> *</span>
+                <input type="text" name="email" id="email" class="form-control">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Téléphone :</label>
+                <input type="phone" name="phone" id="phone" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="technical_environment">Sélectionnez l'environnement technique du projet :</label>
+                <select name="technical_environment" id="technical_environment" class="form-control col-6">
+                    <option value="choice">Choisissez</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="javaScript">javaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Java">Java</option>
+                    <option value="other">Autre...</option>
+                </select>
+                <textarea name="technical_environment_c" id="technical_environment_c" class="form-control" placeholder="Si autre, précisez ici !"></textarea>
+            </div>
+
+            <div class="form-group row">
+                <button type="submit" class="btn btn-primary btn-block col-6" id="submit">Envoyer</button>
+                <button type="reset" class="btn btn-secondary col-6">Effacer</button>
+            </div>
+        </form>
+    </div>
+    <!-- script -->
+    <script src="javaScript/script.js"></script>
+</body>
+
+</html>

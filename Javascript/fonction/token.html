@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str1 = 'rober;dupont;8000';
+        var str2 = ';';
+        var position = 1;
+
+        function strtok(str1, str2, position) {
+            var string = '';
+            var counter = 0;
+            position = position - 1; // premier élément = 0;
+            for (var i = 0; i < str1.length; i++) { // parcours la chaine de caractères
+                if (str1.substr(i, 1) == str2) {
+                    counter++; // compte le nombre de ';'
+                }
+                if (counter == position && str1.substr(i, 1) != str2) { // recupere avant le ';'
+                    string = string + str1.substr(i, 1);
+                }
+            }
+            alert(string);
+        }
+        strtok(str1, str2, position);
+    </script>
+</body>
+
+</html>

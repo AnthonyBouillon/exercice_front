@@ -11,9 +11,17 @@
 <body>
     <script>
         var numberLetter = function (phrase, letter) {
-
+            var counter = 0;
+            for (var i = 0; i < phrase.length; i++) { // parcourt chaque lettre de la phrase
+                if (phrase.substr((i + 1), 1) == letter) { // si une lettre de la phrase correspond à celle recherché
+                    counter++; // ajoute +1 au compteur
+                }
+            }
+            alert('Il y a' + ' ' + counter + ' ' + 'fois la lettre' + ' ' + letter + ' ' + 'dans la phrase');
         }
-        numberLetter('Salut à toi !', 'a');
+        var phrase = prompt('Ecrivez une phrase');
+        var letter = prompt('Ecrivez une lettre');
+        numberLetter(phrase, letter);
     </script>
 </body>
 
